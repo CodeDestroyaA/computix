@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://YOUR-GITHUB-USERNAME.github.io/computix/"><strong>Live demo</strong></a>
+  <a href="https://CodeDestroyaA.github.io/computix/"><strong>Live demo</strong></a>
 </p>
 
 ![ComputiX home page](docs/home.jpg)
