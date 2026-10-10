@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in or register | ComputiX</title>
+  <meta name="description" content="Log in to your ComputiX account or create one to order parts and post classified ads.">
+  <meta name="theme-color" content="#072226">
+  <meta property="og:title" content="Log in or register | ComputiX">
+  <meta property="og:description" content="Log in to your ComputiX account or create one to order parts and post classified ads.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/computix-logo-sm.png" alt="ComputiX home" width="489" height="100"></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="classifieds.html">Classifieds</a></li><li><a href="support.html">Support</a></li></ul>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn account-link" href="account.html" aria-label="Log in or register"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span class="account-label">Log in</span></a>
+        <button class="icon-btn cart-btn" type="button" aria-label="Open cart" aria-controls="cart-drawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg><span class="cart-count" data-empty="true">0</span></button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="auth">
+      <div class="auth-art">
+        <h1>Your parts, your builds</h1>
+        <p>An account lets you check out, track orders and sell on Classifieds.</p>
+      </div>
+      <div class="auth-panel">
+        <div>
+          <div class="tabs" role="tablist" aria-label="Account">
+            <button type="button" role="tab" id="tab-login" data-tab="login" aria-controls="panel-login" aria-selected="true">Log in</button>
+            <button type="button" role="tab" id="tab-register" data-tab="register" aria-controls="panel-register" aria-selected="false" tabindex="-1">Register</button>
+          </div>
+
+          <section id="panel-login" role="tabpanel" aria-labelledby="tab-login">
+            <form id="login-form" novalidate>
+              <div class="form-alert" id="login-alert" role="alert"></div>
+              <div class="field">
+                <label for="login-email">Email</label>
+                <input id="login-email" type="email" autocomplete="email">
+                <span class="error" id="login-email-error"></span>
+              </div>
+              <div class="field">
+                <label for="login-password">Password</label>
+                <div class="password-wrap">
+                  <input id="login-password" type="password" autocomplete="current-password">
+                  <button class="btn-link" type="button" aria-pressed="false" aria-label="Show password">Show</button>
+                </div>
+                <span class="error" id="login-password-error"></span>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Log in</button>
+            </form>
+            <p class="form-note">New to ComputiX? <button class="btn-link" type="button" data-switch="register">Create an account</button></p>
+          </section>
+
+          <section id="panel-register" role="tabpanel" aria-labelledby="tab-register" hidden>
+            <form id="register-form" novalidate>
+              <div class="form-alert" id="register-alert" role="alert"></div>
+              <div class="field">
+                <label for="reg-username">Username</label>
+                <input id="reg-username" autocomplete="username" aria-describedby="reg-username-hint">
+                <span class="hint" id="reg-username-hint">Shown on your classified ads.</span>
+                <span class="error" id="reg-username-error"></span>
+              </div>
+              <div class="field">
+                <label for="reg-email">Email</label>
+                <input id="reg-email" type="email" autocomplete="email">
+                <span class="error" id="reg-email-error"></span>
+              </div>
+              <div class="field">
+                <label for="reg-phone">Mobile number <span style="color:var(--solder);font-weight:400">(optional)</span></label>
+                <input id="reg-phone" type="tel" autocomplete="tel" placeholder="082 123 4567">
+                <span class="error" id="reg-phone-error"></span>
+              </div>
+              <div class="field">
+                <label for="reg-password">Password</label>
+                <div class="password-wrap">
+                  <input id="reg-password" type="password" autocomplete="new-password" aria-describedby="strength">
+                  <button class="btn-link" type="button" aria-pressed="false" aria-label="Show password">Show</button>
+                </div>
+                <span class="hint" id="strength" aria-live="polite">At least 8 characters with a letter and a number.</span>
+                <span class="error" id="reg-password-error"></span>
+              </div>
+              <div class="field">
+                <label for="reg-confirm">Confirm password</label>
+                <input id="reg-confirm" type="password" autocomplete="new-password">
+                <span class="error" id="reg-confirm-error"></span>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Create account</button>
+            </form>
+            <p class="form-note">Already registered? <button class="btn-link" type="button" data-switch="login">Log in</button></p>
+          </section>
+
+          <p class="form-note">Demo project: accounts are saved in your browser only, never sent anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span data-year>2025</span> ComputiX. A student portfolio project, not a real store.</p>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="classifieds.html">Classifieds</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="support.html#grading">How grading works</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Cart</h2>
+      <button class="icon-btn drawer-close" type="button" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="drawer-body"></div>
+    <div class="drawer-foot">
+      <div class="cart-total"><span>Total</span><span class="price">R0</span></div>
+      <button class="btn btn-primary btn-block checkout-btn" type="button" disabled>Place order</button>
+      <p class="form-note">Every part ships with a 3-month warranty. Delivery across Gauteng in 2–3 working days.</p>
+    </div>
+  </aside>
+  <div class="drawer-backdrop"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/account.js"></script>
+</body>
+</html>

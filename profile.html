@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your profile | ComputiX</title>
+  <meta name="description" content="Your ComputiX account details, orders and classified ads.">
+  <meta name="theme-color" content="#072226">
+  <meta property="og:title" content="Your profile | ComputiX">
+  <meta property="og:description" content="Your ComputiX account details, orders and classified ads.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/computix-logo-sm.png" alt="ComputiX home" width="489" height="100"></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="classifieds.html">Classifieds</a></li><li><a href="support.html">Support</a></li></ul>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn account-link" href="account.html" aria-label="Log in or register"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span class="account-label">Log in</span></a>
+        <button class="icon-btn cart-btn" type="button" aria-label="Open cart" aria-controls="cart-drawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg><span class="cart-count" data-empty="true">0</span></button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="profile-head">
+        <div class="avatar" id="avatar" aria-hidden="true"></div>
+        <div>
+          <h1 id="username"></h1>
+          <p id="joined"></p>
+        </div>
+        <button class="btn" type="button" id="logout">Log out</button>
+      </div>
+
+      <div class="profile-grid">
+        <section aria-labelledby="details-title">
+          <h2 id="details-title" style="font-size:2.25rem">Details</h2>
+          <dl class="details">
+            <dt>Member number</dt><dd id="d-member"></dd>
+            <dt>Email</dt><dd id="d-email"></dd>
+            <dt>Mobile</dt><dd id="d-phone"></dd>
+          </dl>
+        </section>
+        <div>
+          <section id="orders" aria-labelledby="orders-title">
+            <h2 id="orders-title" style="font-size:2.25rem">Orders</h2>
+            <div id="orders-list"></div>
+          </section>
+          <section id="ads" aria-labelledby="ads-title" style="margin-top:48px">
+            <div class="section-head" style="margin-bottom:8px">
+              <h2 id="ads-title" style="font-size:2.25rem">Your ads</h2>
+              <a href="classifieds.html#post">Post an ad</a>
+            </div>
+            <div id="ads-list"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span data-year>2025</span> ComputiX. A student portfolio project, not a real store.</p>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="classifieds.html">Classifieds</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="support.html#grading">How grading works</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Cart</h2>
+      <button class="icon-btn drawer-close" type="button" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="drawer-body"></div>
+    <div class="drawer-foot">
+      <div class="cart-total"><span>Total</span><span class="price">R0</span></div>
+      <button class="btn btn-primary btn-block checkout-btn" type="button" disabled>Place order</button>
+      <p class="form-note">Every part ships with a 3-month warranty. Delivery across Gauteng in 2–3 working days.</p>
+    </div>
+  </aside>
+  <div class="drawer-backdrop"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/profile.js"></script>
+</body>
+</html>

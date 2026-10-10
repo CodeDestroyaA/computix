@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support | ComputiX</title>
+  <meta name="description" content="Answers about grading, warranty, delivery and selling on ComputiX, plus a contact form.">
+  <meta name="theme-color" content="#072226">
+  <meta property="og:title" content="Support | ComputiX">
+  <meta property="og:description" content="Answers about grading, warranty, delivery and selling on ComputiX, plus a contact form.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/computix-logo-sm.png" alt="ComputiX home" width="489" height="100"></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="classifieds.html">Classifieds</a></li><li><a href="support.html" aria-current="page">Support</a></li></ul>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn account-link" href="account.html" aria-label="Log in or register"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span class="account-label">Log in</span></a>
+        <button class="icon-btn cart-btn" type="button" aria-label="Open cart" aria-controls="cart-drawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg><span class="cart-count" data-empty="true">0</span></button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Support</h1>
+        <p>Most questions are answered below. If not, send us a message.</p>
+      </div>
+    </div>
+
+    <div class="wrap support-grid">
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Questions</h2>
+        <details id="grading" open>
+          <summary>How do you test and grade parts?</summary>
+          <p>Graphics cards run a three-hour stress test while we log temperatures. Memory gets four passes of MemTest86, drives are checked with SMART tools, and CPUs and boards are booted in a test bench. The grade (A, B or C) only describes cosmetic condition; every grade passes the same tests.</p>
+        </details>
+        <details>
+          <summary>What does the 3-month warranty cover?</summary>
+          <p>If a part from our shop stops working within three months for any reason other than physical damage, we repair, replace or refund it. Classifieds ads are between you and the seller and are not covered.</p>
+        </details>
+        <details>
+          <summary>How long does delivery take?</summary>
+          <p>Two to three working days across Gauteng and four to six working days elsewhere in South Africa. You can also collect from our Johannesburg test bench.</p>
+        </details>
+        <details>
+          <summary>Can I return a part I don't need?</summary>
+          <p>Yes, within seven days if it's in the condition we sent it. Contact us with your order number to start a return.</p>
+        </details>
+        <details>
+          <summary>How do I sell on Classifieds?</summary>
+          <p>Create a free account, then choose Post an ad on the Classifieds page. Buyers message you through ComputiX, and you can remove the ad from your profile once it's sold.</p>
+        </details>
+        <details>
+          <summary>Will you buy my parts outright?</summary>
+          <p>Often, yes. Send us the model and condition using the form and we'll reply with an offer, usually within a day.</p>
+        </details>
+      </section>
+
+      <section class="contact-card" aria-labelledby="contact-title">
+        <h2 id="contact-title" style="font-size:2.5rem">Contact us</h2>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" autocomplete="name">
+            <span class="error" id="c-name-error"></span>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" type="email" autocomplete="email">
+            <span class="error" id="c-email-error"></span>
+          </div>
+          <div class="field">
+            <label for="c-topic">Topic</label>
+            <select id="c-topic">
+              <option value="">Choose a topic</option>
+              <option>An order I placed</option>
+              <option>Warranty or return</option>
+              <option>Selling parts to ComputiX</option>
+              <option>Something else</option>
+            </select>
+            <span class="error" id="c-topic-error"></span>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message"></textarea>
+            <span class="error" id="c-message-error"></span>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Send message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span data-year>2025</span> ComputiX. A student portfolio project, not a real store.</p>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="classifieds.html">Classifieds</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="support.html#grading">How grading works</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Cart</h2>
+      <button class="icon-btn drawer-close" type="button" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="drawer-body"></div>
+    <div class="drawer-foot">
+      <div class="cart-total"><span>Total</span><span class="price">R0</span></div>
+      <button class="btn btn-primary btn-block checkout-btn" type="button" disabled>Place order</button>
+      <p class="form-note">Every part ships with a 3-month warranty. Delivery across Gauteng in 2–3 working days.</p>
+    </div>
+  </aside>
+  <div class="drawer-backdrop"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/support.js"></script>
+</body>
+</html>

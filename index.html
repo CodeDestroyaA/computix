@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ComputiX | Tested second-hand PC parts in Johannesburg</title>
+  <meta name="description" content="Buy and sell pre-loved PC components. Every part in the ComputiX shop is stress-tested, graded and covered by a 3-month warranty.">
+  <meta name="theme-color" content="#072226">
+  <meta property="og:title" content="ComputiX | Tested second-hand PC parts in Johannesburg">
+  <meta property="og:description" content="Buy and sell pre-loved PC components. Every part in the ComputiX shop is stress-tested, graded and covered by a 3-month warranty.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/computix-logo-sm.png" alt="ComputiX home" width="489" height="100"></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="classifieds.html">Classifieds</a></li><li><a href="support.html">Support</a></li></ul>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn account-link" href="account.html" aria-label="Log in or register"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span class="account-label">Log in</span></a>
+        <button class="icon-btn cart-btn" type="button" aria-label="Open cart" aria-controls="cart-drawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg><span class="cart-count" data-empty="true">0</span></button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <h1>Second-hand parts, tested before they ship</h1>
+        <p class="lede">Graphics cards, processors, memory and more. Every part in our shop is stress-tested, graded A to C and covered for three months.</p>
+        <form class="search" action="shop.html" role="search">
+          <label class="visually-hidden" for="hero-q">Search parts</label>
+          <input id="hero-q" name="q" type="search" placeholder="Try “RTX 3060” or “AM4”" autocomplete="off">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <p class="quick-links">Popular: <a href="shop.html?q=rtx">RTX cards</a> <a href="shop.html?q=am4">AM4 builds</a> <a href="shop.html?q=ddr5">DDR5</a> <a href="shop.html?grade=C">Budget grade C</a></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bins-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="bins-title">Shop by part</h2>
+          <a href="shop.html">See all stock</a>
+        </div>
+        <div class="bins" id="bins"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="new-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="new-title">Just tested</h2>
+          <p>Fresh off the test bench this week.</p>
+        </div>
+        <div class="grid" id="newest"></div>
+      </div>
+    </section>
+
+    <section class="section" id="grading" aria-labelledby="grade-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="grade-title">What the grades mean</h2>
+          <p>Grade reflects how a part looks. Every grade passes the same tests.</p>
+        </div>
+        <div class="grades">
+          <div class="grade-row" data-grade="A"><span class="grade-stamp"><b>A</b>Like new</span><p>No visible wear, original packaging in most cases. Stress-tested for at least three hours.</p></div>
+          <div class="grade-row" data-grade="B"><span class="grade-stamp"><b>B</b>Light wear</span><p>Small scuffs or a replaced fan, nothing that affects performance. Same tests as grade A.</p></div>
+          <div class="grade-row" data-grade="C"><span class="grade-stamp"><b>C</b>Well used</span><p>Visible marks or missing box. Works as it should and priced for budget builds.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sell-title">
+      <div class="wrap sell-band">
+        <div>
+          <h2 id="sell-title">Upgrading? Sell your old parts</h2>
+          <p>List a part on Classifieds for free and deal directly with buyers in your area.</p>
+          <a class="btn btn-primary" href="classifieds.html#post">Post an ad</a>
+        </div>
+        <ul>
+          <li>Free to list, no commission</li>
+          <li>Buyers message you through ComputiX, your number stays private</li>
+          <li>Remove your ad any time from your profile</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span data-year>2025</span> ComputiX. A student portfolio project, not a real store.</p>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="classifieds.html">Classifieds</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="support.html#grading">How grading works</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Cart</h2>
+      <button class="icon-btn drawer-close" type="button" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="drawer-body"></div>
+    <div class="drawer-foot">
+      <div class="cart-total"><span>Total</span><span class="price">R0</span></div>
+      <button class="btn btn-primary btn-block checkout-btn" type="button" disabled>Place order</button>
+      <p class="form-note">Every part ships with a 3-month warranty. Delivery across Gauteng in 2–3 working days.</p>
+    </div>
+  </aside>
+  <div class="drawer-backdrop"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
